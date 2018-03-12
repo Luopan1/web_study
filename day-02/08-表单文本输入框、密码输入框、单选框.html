@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="1.php" method="get"> 
+		<fieldset>
+			<legend>分组信息</legend>
+	用户名:<input type="text" name="username" maxlength="10"   value="大前端"  /><br /><br />
+
+	密&nbsp;&nbsp;&nbsp;码:<input type="password"  name="password" /><br />
+
+	<!-- 单选框 -->
+	<input type="radio" name="gender" checked="checked" value="boy">男 
+	<input type="radio" name="gender" value="girl">女      <br /><br /> 
+
+		<!-- 表单下拉列表 -->
+		<select name="provicen" id="provicen">
+			<option value="1999">1999</option>
+			<option value="2000">2000</option>
+			<option value="2001" selected="selected">2001</option>
+			<option value="2002">2002</option>
+			<option value="2003">2003</option>
+		</select>年
+
+			<select name="mouth" id="mouth">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3"  selected="selected">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>月
+
+	<select name="day" id="<day></day>">
+
+		<!-- 对某些菜单进行分组 -->
+		<optgroup label="1"> 
+
+			<option value="12">12</option>
+			<option value="13">13</option>
+		</optgroup>
+
+			<option value="14"  selected="selected">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+
+	</select>日
+
+		<br />
+		<br />
+	爱好<select name="love" id="love" multiple="multiple">
+		<option value="baseketball">篮球</option>
+		<option value="football">足球</option>
+		<option value="pingpangqiu">乒乓球</option>
+	</select>
+		<br />
+		<br />
+
+		<!-- 多选框 -->
+		<input type="checkbox" checked="checked" />喝酒
+		<input type="checkbox" />抽烟
+		<input type="checkbox" />烫头
+		<br /><br />
+
+		<!-- 多行文本框 -->
+		<!-- rows  10行输入 cols 一行字符长度-->
+		<textarea cols="5" rows="10"></textarea>
+		<br /><br />
+		<input type="file" /><br /><br />
+
+	<input type="submit" name="提交">
+
+	<input type="button" value="普通按钮" />
+
+	<!-- 图片按钮 -->
+	<input type="image" src="./img/favicon.ico" />
+
+	<!-- 重置按钮 --> 
+	<input type="reset" />
+	</fieldset>
+
+	</form>
+</body>
+</html>
