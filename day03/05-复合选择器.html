@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			font-size: 50px;
+
+		}
+		/* 交集选择器  标签+类（ID）选择器{
+				属性：值;
+
+
+			*/
+		div.box{
+			color: red;
+		}
+
+		#miss{
+			color: blue;
+		}
+
+		div#miss{
+			width: 400px;
+			height: 300px;
+			background-color: orange;
+			font-size: 50px
+		}
+
+		
+		/* 后代选择器   (包含关系 或者嵌套关系)*/
+		/* 选择器 +空格+选择器{
+			属性：值;
+
+
+			} */
+
+			.bix{
+				font-size: 40px;
+				color: red;
+			}
+			div p span{
+				font-size: 40px;
+			}
+	</style>
+</head>
+<body>
+	<!-- 交集选择器 -->
+		
+	<div class="box">web学习</div>
+	<p class="box">web study</p>
+	<div id="miss">14</div>
+
+
+<!-- 后代选择器 -->
+
+		<div>
+			<p>
+				<span>web 学习</span>
+			</p>
+		</div>
+
+		<div>
+			
+			<span>web 学习</span>
+		</div>
+
+		<span style="font-size: 30px" >7</span>
+		<span style="font-size: 15px" >.2折</span>
+		<font font-size="30px">777</font>
+	"交易明细：<font color= '#333333'>"+"姓名：" + "<big>"+name +"</big></font> "+"日期：17-01-06  20:00"
+	<font style="font-size:100px">777</font>
+</body>
+</html>

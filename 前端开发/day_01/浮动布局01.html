@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动布局</title>
+	<style type="text/css">
+		.menu{
+			width: 960px;
+			height: 40px;
+			background-color: #55a8ea;
+			padding: 0;
+			margin:50px auto 0;
+			position: relative;
+		}
+		.menu li{
+			list-style: none;
+			float: left;
+			width: 100px;
+			text-align: center;
+			
+		}
+		.menu li a{
+			font:14px/40px "Microsoft Yahei";
+			color: #fff;
+			text-decoration: none;
+
+		}
+
+		.menu li:hover{
+			background-color: #00619f;
+		}
+
+		.new{
+			width:33px;
+			height:20px;
+			background:url(images/apple.png) no-repeat;
+			position:absolute;
+			left:200px;
+			top:-10px;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<ol class="menu">
+		<li><a href="">首 页</a></li>
+		<li><a href="">网站建设</a></li>
+		<li><a href="">程序开发</a></li>
+		<li><a href="">网络营销</a></li>
+		<li><a href="">联系我们</a></li>
+		<li class="new"></li>
+	</ol>
+
+
+</body>
+</html>
